@@ -1,0 +1,22 @@
+#Asks users input for people attending and how many hotdogs they will eat.
+nums = int(input("Enter number of people attending cookout: "))
+num_of_dogs = int(input("Enter number of hot dogs each person will eat: "))
+
+#Number of hotdogs and buns in each package
+dogsPerPackage = 10
+bunsPerPackage = 8
+
+#Calculates total number of hotdogs based on people attending
+total = nums * num_of_dogs
+
+#Calculates remainder of hotdogs based on total number
+dog_packages = total
+buns_needed = total 
+left_dogs = total % dogsPerPackage
+dogs_left = total % bunsPerPackage
+
+#Prints required buns and hotdogs along with what is leftover
+print("Minimum number of packages of hot dogs required =", dog_packages)
+print("Minimum number of packages of hot dog buns required =", buns_needed)
+print("Hot dogs left over =", left_dogs)
+print("Hot dogs buns left over =", dogs_left)
